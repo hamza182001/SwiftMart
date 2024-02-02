@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Login_Screen">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        android:backgroundTint="@color/white"
+        android:id="@+id/ibBack"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:src="@drawable/carrot"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="5sp"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="10sp"
+        android:text="Enter your email and password"
+        android:layout_gravity="center"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10sp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etEmailLog"
+            android:textColor="@color/black"
+            android:hint="Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10sp"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:id="@+id/etPasswordLog"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By continuing you agree to our "
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service &amp; Privacy Policy"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:backgroundTint="@color/light_green"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:id="@+id/btnLoginLog"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:clickable="true"
+            android:id="@+id/tvSignUpLog"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+</LinearLayout>

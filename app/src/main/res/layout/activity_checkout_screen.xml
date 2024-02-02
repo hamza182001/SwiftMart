@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutScreen"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="20sp"
+       >
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/back_arrow"
+           android:background="@color/white"
+           android:id="@+id/ibBackCheckout"
+           android:layout_gravity="center_vertical"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Checkout"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+
+           android:textSize="25sp"
+           android:layout_marginLeft="90sp"
+           />
+
+   </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10sp"
+        app:cardBackgroundColor="@color/light_green"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Delivery Options"
+                android:layout_margin="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:button="@drawable/radio_button_outline"
+                    android:text="Deliver Now"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:button="@drawable/radio_button_outline"
+                    android:text="Schedule Delivery"/>
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10sp"
+        android:layout_marginTop="10sp"
+        app:cardBackgroundColor="@color/light_green"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Location"
+                android:layout_margin="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/tvCheckoutAddress"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"/>
+    </LinearLayout>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170sp"
+            android:text="RS"
+            android:textColor="@color/black"
+            android:id="@+id/tvCheckoutPrice"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+       android:backgroundTint="@color/light_green"
+        android:text="Place Order"
+        android:id="@+id/btnPlaceOrder"
+        android:textColor="@color/white"
+        android:layout_marginTop="50sp"/>
+
+</LinearLayout>

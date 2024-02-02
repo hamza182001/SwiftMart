@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="110sp"
+            android:layout_height="120sp"
+            android:id="@+id/ivCart"/>
+        <LinearLayout
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item name"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:textStyle="bold"
+                android:id="@+id/tvCartName"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item description"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:id="@+id/tvCartDescription"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="20sp"
+                >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/delete_icon"
+                android:id="@+id/ibCartDelete"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="0"
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="10sp"
+
+                android:id="@+id/tvCartItemCount"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/add_circle"
+                android:id="@+id/ibCartAdd"
+                android:background="@color/white"
+                />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/tvCartPrice"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

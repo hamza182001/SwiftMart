@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "412650285453",
+    "project_id": "mad-grocery-project",
+    "storage_bucket": "mad-grocery-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412650285453:android:d63330093b48345f0135c4",
+        "android_client_info": {
+          "package_name": "com.example.madgrocery_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi2f1RUhAeSWY7kRV-5uFpsTqgg0kYiVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

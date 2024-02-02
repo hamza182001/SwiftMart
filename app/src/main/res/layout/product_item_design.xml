@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="10sp"
+    android:elevation="15sp"
+    android:layout_marginRight="5sp"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:scaleType="fitXY"
+            android:id="@+id/ivPic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvItem"
+            android:text="Banana"
+            android:textSize="20sp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="200Rs"
+            android:layout_marginLeft="5sp"
+
+            android:textSize="15sp"
+            android:id="@+id/tvPrice"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/delete_icon"
+                android:id="@+id/ibDelete"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="0"
+                android:textColor="@color/black"
+
+
+
+                android:id="@+id/tvItemCount"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:src="@drawable/add_circle"
+                android:id="@+id/ibAdd"
+                android:background="@color/white"
+                />
+    </LinearLayout>
+
+
+    </LinearLayout>
+        
+    
+   
+
+</androidx.cardview.widget.CardView>

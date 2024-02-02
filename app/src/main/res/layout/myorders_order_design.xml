@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order#"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="30sp"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Items"
+        android:textSize="20sp"
+        android:layout_marginLeft="10sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvItemsMyOrders"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/tvMyOrderPrice"
+        android:layout_marginLeft="10sp"
+        />
+
+
+</LinearLayout>
